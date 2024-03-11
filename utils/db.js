@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 
-const URI = "mongodb+srv://cluster0.twczofc.mongodb.net/mern_admin";
+// const URI = "mongodb+srv://cluster0.twczofc.mongodb.net/mern_admin";
 // mongoose.connect(URI);
+
+const URI = process.env.MONGODB_URI;
 
 const connectDb = async () => {
     try {
